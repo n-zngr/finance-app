@@ -1,13 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LucideAngularModule } from 'lucide-angular';
+import { NavigationButton } from './navigation-button/navigation-button';
 
 export class AppModule { }
 @Component({
     selector: 'app-root',
     imports: [
         RouterOutlet, 
-        LucideAngularModule
+        LucideAngularModule,
+        NavigationButton,
     ],
     templateUrl: './app.component.html',
 })

@@ -1,11 +1,8 @@
 <router-outlet></router-outlet>
-<nav class="flex justify-center">
-    <button class="flex flex-col items-center">
+<nav class="fixed left-0 bottom-0 h-16 w-full flex justify-center gap-x-4 items-center bg-zinc-900 p-2">
+    <button class="flex flex-col items-center hover:bg-zinc-800 rounded-full transition-colors duration-200 min-w-20 p-2">
         <lucide-icon name="layout-dashboard"></lucide-icon>
         Dashboard
     </button>
-    <button class="flex flex-col items-center">
-        <lucide-icon name="user-round"></lucide-icon>
-        Profile
-    </button>
+    <navigation-button></navigation-button>
 </nav>
